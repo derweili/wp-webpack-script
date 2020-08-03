@@ -145,6 +145,8 @@ class MyPluginInit {
 			'plugin',
 			// Plugin location, pass false in case of theme.
 			__FILE__
+			// Type of Theme, pass 'child' in case of a theme. Don't pass this parameter for parent themes or plugins.
+			'child'
 		);
 		// Enqueue a few of our entry points
 		add_action( 'wp_enqueue_scripts', [ $this, 'plugin_enqueue' ] );
